@@ -1,6 +1,6 @@
 Youtube Premium
-Spotify Premium
-SoundCloudGo+
-LocketGold
-PicsArt
-DuolingoSuper
+/nSpotify Premium
+/nSoundCloudGo+
+/nLocketGold
+/nPicsArt
+/nDuolingoSuper
