@@ -20,7 +20,7 @@ http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:4
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext _ reject-200
 
 [MITM]
-hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, api.revenuecat.com, spclient.wg.spotify.com, *spclient.spotify.com, api.picsart.c*, api.meiease.c*, api-mobile.soundcloud.com, ios-api-2.duolingo.com, goals-api.duolingo.com, ios-api-cf.duolingo.com
+hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, api.revenuecat.com, spclient.wg.spotify.com, *spclient.spotify.com, api.picsart.c*, api.meiease.c*, api-mobile.soundcloud.com
 
 [Script]
 #YoutubePremium
@@ -35,9 +35,6 @@ SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/confi
 
 #PicsArt
 Picsart=type=http-response,pattern=https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json,requires-body=1,max-size=0,script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/picsart.js
-
-#DuolingoSuper
-^https:\/\/(ios-api-2|goals-api|ios-api-cf)\.duolingo\.com\/.*users.* script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/duolingo.js,requires-body=true, timeout=10, tag=Unlock_Super_Duolingo
 
 #LocketGold
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/locket_gold.js, requires-body=true, max-size=-1, timeout=60
