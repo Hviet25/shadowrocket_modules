@@ -1,0 +1,9 @@
+#!url=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/modules/grammarly_premium.sgmodule
+#!name=Grammarly Premium
+#desc=Unlock Grammarly Premium
+
+[MITM]
+hostname = %APPEND% subscription.grammarly.com
+
+[Script]
+Grammarly=type=http-response,pattern=^https?:\/\/subscription\.grammarly\.com\/api\/v1\/subscription$,script-path=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/grammarly.js, requires-body=1

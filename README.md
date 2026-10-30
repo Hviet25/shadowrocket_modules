@@ -1,10 +1,1 @@
-Youtube Premium
-
-Spotify Premium
-
-SoundCloudGo+
-
-LocketGold
-
-PicsArt
-
+Premium Apps for Personal Use

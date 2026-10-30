@@ -1,8 +1,8 @@
-#!url=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/modules/soundcloud_plus.sgmodule
+#!url=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/modules/soundcloud_plus.sgmodule
 #!name=SoundCloud Plus
 #!desc=Unlock SoundCloud Plus
 
 [Script]
-SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1, script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/soundcloud_plus.js
+SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1, script-path=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/soundcloud_plus.js
 [MITM]
 hostname= %APPEND% api-mobile.soundcloud.com

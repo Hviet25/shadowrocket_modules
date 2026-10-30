@@ -1,0 +1,9 @@
+#!url=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/modules/lightroom.sgmodule
+#!name=Lightroom
+#!desc=Unlock Lightroom
+
+[MITM]
+hostname = %APPEND% photos.adobe.io
+
+[Script]
+LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/lightroom.js

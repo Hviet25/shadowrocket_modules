@@ -1,0 +1,9 @@
+#!url=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/modules/camscanner.sgmodule
+#!name=CamScanner
+#desc=Unlock CamScanner
+
+[MITM]
+hostname =%APPEND% ap*.intsig.net
+
+[Script]
+CamScanner=type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1, script-path=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/camscanner.js

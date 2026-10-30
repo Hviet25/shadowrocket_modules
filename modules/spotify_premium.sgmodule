@@ -1,4 +1,4 @@
-#!url=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/modules/spotify_premium.sgmodule
+#!url=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/modules/spotify_premium.sgmodule
 #!name=Spotify Premium
 #!desc=Unlock Spotify Premium
 
@@ -9,5 +9,5 @@ http-request ^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:4
 hostname = %APPEND% spclient.wg.spotify.com, *spclient.spotify.com
 
 [Script]
-spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/spotify_json.js
-spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/spotify_proto.js,script-update-interval=0
+spotify-json = type=http-request,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/spotify_json.js
+spotify-proto = type=http-response,pattern=^https:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com(:443)?)\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/spotify_proto.js,script-update-interval=0
