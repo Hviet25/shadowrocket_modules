@@ -3172,7 +3172,7 @@ ${c[0][g][0]}`;
               if (c !== 2) {
                 let f = new Ge({
                   baseUrl: s[d].baseUrl + `&tlang=${e}`,
-                  name: { runs: [{ text: `@DoHungx (${e})` }] },
+                  name: { runs: [{ text: `@Subtitles (${e})` }] },
                   vssId: `.${e}`,
                   languageCode: e,
                 });
