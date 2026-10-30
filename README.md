@@ -8,4 +8,3 @@ LocketGold
 
 PicsArt
 
-DuolingoSuper
