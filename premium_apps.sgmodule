@@ -40,8 +40,8 @@ Picsart=type=http-response,pattern=https:\/\/api\.(picsart|meiease)\.c(n|om)\/us
 ^https:\/\/(ios-api-2|goals-api|ios-api-cf)\.duolingo\.com\/.*users.* script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/duolingo.js,requires-body=true, timeout=10, tag=Unlock_Super_Duolingo
 
 #LocketGold
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/refs/heads/main/js/locket_gold.js, requires-body=true, max-size=-1, timeout=60
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://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@raw.githubusercontent.com/dhungx/modules-shadowrocket/refs/heads/main/js/locket_gold_deleteHeader.js, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/locket_gold.js, requires-body=true, max-size=-1, timeout=60
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://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@raw.githubusercontent.com/Hviet25/shadowrocket_modules/main/js/locket_gold_deleteHeader.js, timeout=60
 
 [Map Local]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data="" status-code=200
